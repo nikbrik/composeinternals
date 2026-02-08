@@ -15,5 +15,5 @@ Desktop.ini
 *.temp
 *.log
 
-# Optional: раскомментируйте, если не хотите хранить распакованный epub в репо
-# epub_extracted/
+# Распакованный EPUB (можно восстановить из composeinternals.en.epub)
+epub_extracted/
