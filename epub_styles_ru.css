@@ -1,0 +1,142 @@
+/* EPUB styles for Russian book: mobile-friendly reading and code blocks */
+
+body {
+  widows: 2;
+  orphans: 2;
+  -webkit-hyphens: none !important;
+  hyphens: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: sans-serif;
+  page-break-after: avoid;
+}
+
+h1 { font-size: 1.5em; margin-top: 0.5em; margin-bottom: 0.5em; }
+h2 { font-size: 1.25em; margin-top: 0.75em; margin-bottom: 0.4em; }
+h3 { font-size: 1.1em; margin-top: 0.6em; margin-bottom: 0.3em; }
+
+p { margin-top: 0.5em; margin-bottom: 0.5em; }
+
+img { max-width: 100%; height: auto; }
+
+/* Code blocks: простой pre/code без подсветки — одинаково во всех читалках */
+pre, code {
+  font-family: monospace, "Courier New", Courier, Consolas, monospace !important;
+  -webkit-hyphens: none;
+  hyphens: none;
+}
+
+pre {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+  padding: 0.6em 0.75em !important;
+  overflow-x: auto;
+  white-space: pre-wrap !important;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  font-size: 0.9em;
+  line-height: 1.35;
+  background-color: #f5f5f5 !important;
+  border: 1px solid #ccc !important;
+  border-left: 3px solid #666 !important;
+  display: block !important;
+}
+
+pre code {
+  background: transparent !important;
+  padding: 0;
+  border: none !important;
+  font-size: inherit;
+}
+
+/* Inline code */
+:not(pre) > code {
+  font-size: 0.9em;
+  padding: 0.1em 0.25em;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+}
+
+/* SourceCode wrapper (Pandoc): same box so all readers see a code block */
+.sourceCode {
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-left: 3px solid #888;
+  padding: 0.6em 0.75em;
+  margin: 0.75em 0;
+  font-family: monospace, "Courier New", Courier, monospace;
+  font-size: 0.9em;
+  line-height: 1.35;
+}
+
+/* Code block captions (e.g. *FileName.kt*) */
+p + pre { margin-top: 0.25em; }
+
+/* Figures and captions */
+figure { margin: 1em 0; text-align: center; }
+figure img { display: block; margin: 0 auto; }
+figcaption, p.caption {
+  font-size: 0.85em;
+  font-style: italic;
+  margin-top: 0.25em;
+  page-break-before: avoid;
+}
+
+table { margin: 1em auto; border-collapse: collapse; page-break-inside: avoid; }
+td, th { padding: 0.25em 0.5em; text-align: left; }
+
+ul, ol { margin-top: 0.5em; margin-bottom: 0.5em; }
+blockquote { margin: 1em 1em 1em 1.5em; padding-left: 0.5em; border-left: 2px solid #ccc; }
+
+hr { margin: 1.5em 0; }
+
+/* Обёртка .sourceCode (если есть): тот же блок */
+.sourceCode pre { background: transparent !important; border: none !important; margin: 0; padding: 0; }
+div[class*="sourceCode"] {
+  background-color: #f5f5f5 !important;
+  border: 1px solid #ccc !important;
+  border-left: 3px solid #666 !important;
+  padding: 0.6em 0.75em !important;
+  margin: 0.75em 0;
+  font-family: monospace, "Courier New", Courier, Consolas, monospace !important;
+  white-space: pre-wrap !important;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Подсветка синтаксиса (браузер, читалки с поддержкой CSS) */
+.hll { background-color: #ffffcc; }
+.c, .ch, .cm, .cpf, .c1, .cs { color: #408080; font-style: italic; }
+.cp { color: #bc7a00; }
+.err { color: #c00; }
+.k, .kc, .kd, .kn, .kr, .kp { color: #008000; font-weight: bold; }
+.kt { color: #b00040; }
+.o { color: #666; }
+.gd { color: #a00000; }
+.ge { font-style: italic; }
+.gr { color: #c00; }
+.gh, .gp { color: #000080; font-weight: bold; }
+.gi { color: #00a000; }
+.go { color: #888; }
+.gs { font-weight: bold; }
+.gu { color: #800080; font-weight: bold; }
+.gt { color: #0044dd; }
+.m, .mb, .mf, .mh, .mi, .mo, .il { color: #666; }
+.s, .sa, .sb, .sc, .dl, .sd, .s2, .sh, .s1, .ss { color: #ba2121; }
+.se, .si, .sr { color: #bb6688; font-weight: bold; }
+.sx { color: #008000; }
+.na { color: #7d9029; }
+.nb, .bp { color: #008000; }
+.nc, .nn, .nf, .fm { color: #00f; font-weight: bold; }
+.no { color: #880000; }
+.nd, .ow { color: #aa22ff; font-weight: bold; }
+.ni { color: #999; font-weight: bold; }
+.ne { color: #d2413a; font-weight: bold; }
+.nl { color: #a0a000; }
+.nt { color: #008000; font-weight: bold; }
+.nv, .vc, .vg, .vi, .vm { color: #19177c; }
