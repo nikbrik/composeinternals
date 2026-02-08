@@ -1,0 +1,19 @@
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDE / Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Temporary
+*.tmp
+*.temp
+*.log
+
+# Optional: раскомментируйте, если не хотите хранить распакованный epub в репо
+# epub_extracted/

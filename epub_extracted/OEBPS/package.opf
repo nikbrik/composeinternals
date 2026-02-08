@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" xml:lang="en" unique-identifier="BookId" dir="ltr">
+ <metadata xmlns:dc="http://purl.org/dc/elements/1.1/"
+           xmlns:opf="http://www.idpf.org/2007/opf">
+   <dc:title dir="ltr" id="title">Jetpack Compose internals</dc:title>
+   <meta refines="#title" property="title-type">main</meta>
+   <dc:creator id="creator">Jorge Castillo</dc:creator>
+   <meta refines="#creator" property="file-as">Jorge Castillo</meta>
+   <meta refines="#creator" property="role" scheme="marc:relators">aut</meta>
+   <dc:language>en</dc:language>
+   <dc:publisher>leanpub.com</dc:publisher>
+   <dc:identifier id="BookId">https://leanpub.com/composeinternals</dc:identifier>
+   <dc:date>2021-07-28</dc:date>
+   <meta property="dcterms:modified">2022-11-20T12:33:30Z</meta>
+
+   <meta name="cover" content="cover_image" />
+ </metadata>
+ <manifest>
+  <item id="style" href="stylesheet.css" media-type="text/css" />
+  <item id="titlepage" href="title_page.xhtml" media-type="application/xhtml+xml" />
+  <item id="versopage" href="verso_page.xhtml" media-type="application/xhtml+xml" />
+  <item id="dedication" href="dedication.xhtml" media-type="application/xhtml+xml" />
+  <item id="toc" href="toc.xhtml" media-type="application/xhtml+xml" properties="nav" />
+  <item id="cover_image" href="resources/title_page.png" media-type="image/png" properties="cover-image" />
+  <item id="chapter00" href="chap00.xhtml" media-type="application/xhtml+xml"  />
+  <item id="chapter01" href="chap01.xhtml" media-type="application/xhtml+xml"  />
+  <item id="chapter02" href="chap02.xhtml" media-type="application/xhtml+xml"  />
+  <item id="chapter03" href="chap03.xhtml" media-type="application/xhtml+xml"  />
+  <item id="chapter04" href="chap04.xhtml" media-type="application/xhtml+xml"  />
+  <item id="chapter05" href="chap05.xhtml" media-type="application/xhtml+xml"  />
+  <item id="chapter06" href="chap06.xhtml" media-type="application/xhtml+xml"  />
+  <item id="chapter07" href="chap07.xhtml" media-type="application/xhtml+xml"  />
+  <item id="img000" href="resources/composable_function.png" media-type="image/png" />
+  <item id="img001" href="resources/calling_context.png" media-type="image/png" />
+  <item id="img002" href="resources/restartable1.png" media-type="image/png" />
+  <item id="img003" href="resources/restartable2.png" media-type="image/png" />
+  <item id="img004" href="resources/positional_memoization.png" media-type="image/png" />
+  <item id="img005" href="resources/compose_architecture.png" media-type="image/png" />
+  <item id="img006" href="resources/implicit_composer.png" media-type="image/png" />
+  <item id="img007" href="resources/tweet.png" media-type="image/png" />
+  <item id="img008" href="resources/slot_table_gap.png" media-type="image/png" />
+  <item id="img009" href="resources/tree1.png" media-type="image/png" />
+  <item id="img010" href="resources/tree2.png" media-type="image/png" />
+  <item id="img011" href="resources/tree3.png" media-type="image/png" />
+  <item id="img012" href="resources/layoutnode_tree.png" media-type="image/png" />
+  <item id="img013" href="resources/multiple_root_compositions.png" media-type="image/png" />
+  <item id="img014" href="resources/composition_and_subcomposition.png" media-type="image/png" />
+  <item id="img015" href="resources/applier.png" media-type="image/png" />
+  <item id="img016" href="resources/materialization1.png" media-type="image/png" />
+  <item id="img017" href="resources/materialization2.png" media-type="image/png" />
+  <item id="img018" href="resources/modifier_resolution.png" media-type="image/png" />
+  <item id="img019" href="resources/dropdownmenu.png" media-type="image/png" />
+  <item id="img020" href="resources/lookaheadlayout.png" media-type="image/png" />
+  <item id="img021" href="resources/lookaheadlayout2.png" media-type="image/png" />
+  <item id="img022" href="resources/measure_pass.png" media-type="image/png" />
+  <item id="img023" href="resources/layout_pass.png" media-type="image/png" />
+  <item id="img024" href="resources/snapshottree.png" media-type="image/png" />
+  <item id="img025" href="resources/stateobject.png" media-type="image/png" />
+  <item id="img026" href="resources/mutableStateOf.png" media-type="image/png" />
+  <item id="img027" href="resources/mutableStateOf2.png" media-type="image/png" />
+  <item id="img028" href="resources/mutableStateListOf.png" media-type="image/png" />
+  <item id="img029" href="resources/chapter-9-xml-compose.jpeg" media-type="image/jpeg" />
+  <item id="img030" href="resources/chapter-9-compose-modules.png" media-type="image/png" />
+  <item id="img031" href="resources/chapter-9-composition.png" media-type="image/png" />
+  <item id="img032" href="resources/chapter-9-vector-composition.png" media-type="image/png" />
+  <item id="img033" href="resources/chapter-9-html-tree.png" media-type="image/png" />
+  <item id="img034" href="resources/chapter-9-js-tree.png" media-type="image/png" />
+  <item id="lpimg000" href="resources/leanpub_warning.png" media-type="image/png" />
+  <item id="lpimg001" href="resources/leanpub_info-circle.png" media-type="image/png" />
+  <item id="lpimg002" href="resources/leanpub_question-circle.png" media-type="image/png" />
+  <item id="lpimg003" href="resources/leanpub_bug.png" media-type="image/png" />
+  <item id="lpimg004" href="resources/leanpub_key.png" media-type="image/png" />
+  <item id="lpimg005" href="resources/leanpub_comments.png" media-type="image/png" />
+  <item id="lpimg006" href="resources/leanpub_pencil.png" media-type="image/png" />
+  <item id="publisher-logo" href="resources/leanpub-logo.png" media-type="image/png" />
+  <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml" />
+ </manifest>
+ <spine toc="ncx" page-progression-direction="ltr">
+  <itemref idref="titlepage" />
+  <itemref idref="versopage" />
+  <itemref idref="dedication" />
+  <itemref idref="toc" />
+  <itemref idref="chapter00" />
+  <itemref idref="chapter01" />
+  <itemref idref="chapter02" />
+  <itemref idref="chapter03" />
+  <itemref idref="chapter04" />
+  <itemref idref="chapter05" />
+  <itemref idref="chapter06" />
+  <itemref idref="chapter07" />
+ </spine>
+
+<guide>
+  <reference href="title_page.xhtml" type="cover" title="Cover" />
+  <reference href="toc.xhtml" type="toc" title="Table of Contents" />
+  <reference href="chap00.xhtml" type="text" title="Start" />
+</guide>
+</package>
